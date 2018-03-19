@@ -1,0 +1,20 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 1
+      author: Dieter Baier
+      changes:
+        - createTable:
+            tableName: account
+            columns:
+              - column:
+                  name: accountNumber
+                  type: varchar(50)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: accountName
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
