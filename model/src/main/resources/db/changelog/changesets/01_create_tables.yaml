@@ -5,16 +5,16 @@ databaseChangeLog:
       author: Dieter Baier
       changes:
         - createTable:
-            tableName: account
+            tableName: ACCOUNT
             columns:
               - column:
-                  name: accountNumber
+                  name: ACCOUNT_NUMBER
                   type: varchar(50)
                   constraints:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: accountName
+                  name: ACCOUNT_NAME
                   type: varchar(50)
                   constraints:
                     nullable: false

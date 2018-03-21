@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+@Table(name = "ACCOUNT")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -15,9 +16,9 @@ import javax.persistence.Table;
 public class Account {
 
     @Id
-    @Column(name="accountNumber")
+    @Column(name="ACCOUNT_NUMBER")
     private String accountNumber;
 
-    @Column(name="accountName", nullable = false)
+    @Column(name="ACCOUNT_NAME", nullable = false)
     private String accountName;
 }
